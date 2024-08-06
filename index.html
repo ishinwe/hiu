@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .post {
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 20px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+
+        .post h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .post {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .post {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="post">
+            <h2>Exploring the Great Outdoors</h2>
+            <p>There is nothing quite like the feeling of being immersed in nature. Hiking through the forest, breathing in the fresh air, and listening to the sounds of wildlife can be incredibly rejuvenating. In this post, we'll explore some of the best hiking trails and offer tips for making the most of your outdoor adventures.</p>
+        </div>
+        <div class="post">
+            <h2>The Benefits of Daily Exercise</h2>
+            <p>Engaging in regular physical activity has numerous benefits for both the body and mind. From improving cardiovascular health to reducing stress, daily exercise can enhance your overall well-being. Join us as we discuss different types of workouts and how to stay motivated to keep moving.</p>
+        </div>
+        <div class="post">
+            <h2>Delicious and Healthy Recipes</h2>
+            <p>Eating a balanced diet is essential for maintaining good health. In this section, we share a variety of delicious and nutritious recipes that are easy to prepare. Whether you're looking for quick weeknight dinners or healthy snacks, we've got you covered.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>
+</body>
+</html>
